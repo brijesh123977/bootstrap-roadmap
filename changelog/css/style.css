@@ -1,0 +1,35 @@
+/* .border-right {
+    border-right: 1px solid black;
+} */
+
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    position: relative;
+    &:before{
+        content:"";
+        display: inline-block;
+        width: 3px;
+        background: black;
+        position: absolute;
+        left:6px;
+        top:-30px;
+        height: 550px;
+    }
+    li{
+      position: relative;
+      padding-left: 50px;
+      &:before{
+        content:"";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: black;
+        position: absolute;
+        left:0;
+        top:23px;
+        border-radius: 10px;
+      }
+    }
+  }
