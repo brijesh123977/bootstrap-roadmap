@@ -1,0 +1,49 @@
+#img{
+    height: 100px;
+    width:100px;
+    border-radius: 100%;
+}
+#down-triangle {
+    width: 0;
+    height: 0;
+    border-top: 19px solid black;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    position: absolute;
+    top: 54%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
+
+.aa{
+    border-radius: 20px;
+}
+
+#bb{
+    border-radius: 20px;
+    height:100%;
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.cc{
+    border-radius: 30px;
+}
+
+.carousel-inner{
+    border-radius: 30px;
+}
+
+.slider-img img{
+    height:100px; 
+    width:100px; 
+    border-radius:50%;
+    object-fit: cover;
+}

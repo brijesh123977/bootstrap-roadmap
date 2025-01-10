@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Cards</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="container-fluid mt-5 mb-5 col-8">
+      <div class="container">
+        <div class="row col-12">
+          <div class="col-lg-6">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="bg-dark text-white p-4 mb-5 aa">
+                  <p class="card-text">
+                    I have been solving all the project ideas on roadmap.sh and
+                    i am surprised how far i have come from where i started.
+                  </p>
+                  <p class="card-text">Highly recommended!</p>
+                </div>
+                <div id="down-triangle"></div>
+                <div class="d-flex justify-content-around">
+                  <div>
+                    <img id="img" src="img/bb.jpg" alt="" />
+                  </div>
+                  <div class="pt-3">
+                    <h4>Artem Jones</h4>
+                    <p>Junior Frontend Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0">
+              <div class="card-body rounded">
+                <div class="border border-dark p-5 aa">
+                  <p class="card-text">
+                    Since starting my career in 2021, i have only followed one
+                    resource, roadmap.sh, it truly helped me go from 0 to having
+                    a job and changing the financial trajectory of my family
+                  </p>
+                  <div class="d-flex justify-content-around pt-5">
+                    <div>
+                      <img id="img" src="img/bb.jpg" alt="" />
+                    </div>
+                    <div class="pt-3">
+                      <h4>Artem Jones</h4>
+                      <p>Junior Frontend Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-lg-6">
+            <img id="bb" src="img/bb.jpg" class="img-fluid" />
+          </div>
+          <div class="col-lg-6">
+            <div class="card bg-dark text-white cc p-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-start">
+                  <div class="text-center mb-2">
+                    <div class="rating">
+                      <label>☆</label>
+                      <label>☆</label>
+                      <label>☆</label>
+                      <label>☆</label>
+                      <label>☆</label>
+                    </div>
+                  </div>
+                </div>
+                <h3>Jackie Mackle</h3>
+                <p class="text-secondary">Engineering Manager</p>
+                <p class="card-text">I find myself recommending roadmap.sh to all
+                    the internees or junior developers. it is great way to skill up 
+                    and grow in your career.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel ">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner bg-dark text-white p-5">
+              <div class="carousel-item active">
+                <p class="text-center">
+                    roadmap.sh is an incredible resource. I was fortunate to discover<br> it
+                    during my university days in 2018. Back then, it was just a single<br>
+                    repository with three images. It's amazing to see how much impact<br> it 
+                    has had on millions of lives since then.
+                </p>
+                <p class="text-center slider-img"><img src="img/bb.jpg" alt=""></p>
+                <p class="text-center">Artem Jones</p>
+              </div>
+              <div class="carousel-item">
+                <p class="text-center">
+                    roadmap.sh is an incredible resource. I was fortunate to discover<br> it
+                    during my university days in 2018. Back then, it was just a single<br>
+                    repository with three images. It's amazing to see how much impact<br> it 
+                    has had on millions of lives since then.
+                </p>
+                <p class="text-center slider-img"><img src="img/bb.jpg" alt=""></p>
+                <p class="text-center">Artem Jones</p>
+              </div>
+              <div class="carousel-item">
+                <p class="text-center">
+                    roadmap.sh is an incredible resource. I was fortunate to discover<br> it
+                    during my university days in 2018. Back then, it was just a single<br>
+                    repository with three images. It's amazing to see how much impact<br> it 
+                    has had on millions of lives since then.
+                </p>
+                <p class="text-center slider-img"><img src="img/bb.jpg" alt=""></p>
+                <p class="text-center">Artem Jones</p>  
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
