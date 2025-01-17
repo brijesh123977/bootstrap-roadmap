@@ -17,78 +17,38 @@
         <h1 class="display-6">Form Design</h1>
       </header>
     </div>
-    <section class="container my-2 bg-dark w-50 text-light p-2">
-      <form class="row g-3 p-3">
+    <section class="container my-3 bg-dark w-50 text-light p-2">
+      <form class="row g-3 p-3" id="form">
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationCustom01"
-            value=""
-            required
-          />
+          <label for="fname" class="form-label">First name</label>
+          <input type="text" class="form-control fname" id="fname" value="" required/>
           <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationCustom02"
-            value=""
-            required
-          />
+          <label for="lname" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lname" value="" required/>
           <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label"
-            >Username</label
-          >
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input
-              type="text"
-              class="form-control"
-              id="validationCustomUsername"
-              aria-describedby="inputGroupPrepend"
-              required
-            />
-            <div class="invalid-feedback">Please choose a username.</div>
-          </div>
+          <label for="uname" class="form-label">User name</label>
+          <input type="text" class="form-control" id="uname" value="" required/>
+          <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" />
+          <input type="email" class="form-control" value="" id="email" />
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4" />
-        </div>
-        <div class="col-12">
-          <label for="inputEmail4" class="form-label">Gender</label>
-          <div class="d-flex">
-          <div class="form-check me-3">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">Male</label>
-          </div>
-          <div class="form-check me-3">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">Female</label>
-          </div>
-          <div class="form-check disabled">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-            <label class="form-check-label" for="exampleRadios3">Other</label>
-          </div>
-        </div>
+          <input type="password" class="form-control" value="" id="password"/>
         </div>
         <div class="col-12">
           <label for="FormControlTextarea" class="form-label">Address</label>
-          <textarea class="form-control" id="FormControlTextarea" rows="3"></textarea>
+          <textarea class="form-control" id="address" rows="3" value=""></textarea>
         </div>
         <div class="col-md-6">
           <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
+          <select id="state" value="" class="form-select">
             <option selected>Choose State..</option>
             <option>Assam</option>
             <option>Bihar</option>
@@ -97,14 +57,31 @@
           </select>
         </div>
         <div class="col-md-6">
-          <label for="inputState" class="form-label">City</label>
-          <select id="inputState" class="form-select">
+          <label for="inputCity" class="form-label">City</label>
+          <select id="city" value="" class="form-select">
             <option selected>Choose City..</option>
             <option>Delhi</option>
             <option>Ahmedabad</option>
             <option>Chennai</option>
             <option>Kolkata</option>
           </select>
+        </div>
+        <div class="col-12">
+          <label for="inputEmail4" class="form-label">Gender</label>
+          <div class="d-flex">
+            <div class="form-check me-3">
+              <input class="form-check-input" type="radio" name="gender" id="radio1" value="Male"/>
+              <label class="form-check-label" for="exampleRadios1">Male</label>
+            </div>
+            <div class="form-check me-3">
+              <input class="form-check-input" type="radio" name="gender" id="radio2" value="Female"/>
+              <label class="form-check-label" for="exampleRadios2">Female</label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="gender" id="radio3" value="Other"/>
+              <label class="form-check-label" for="exampleRadios3">Other</label>
+            </div>
+          </div>
         </div>
         <div class="col-12">
           <div class="form-check">
@@ -115,11 +92,25 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary" id="btn1">
+            Sign in
+          </button>
         </div>
       </form>
     </section>
 
+    <!--<script>
+      function getValue() {
+        var data = document.getElementsByName("gender");
+        var i;
+        for (i = 0; i <= data.length; i++) {
+          if (data[i].checked) {
+            console.log(data[i].value);
+          }
+        }
+      }
+    </script>-->
+    <script src="form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   </body>
