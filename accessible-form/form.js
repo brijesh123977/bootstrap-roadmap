@@ -122,3 +122,39 @@ function validateForm() {
 
   return returnval;
 }
+
+
+
+
+
+  var stats={
+    'karnataka':['bangalore','mysore','hubli'],
+    'maharastra':['pune','mumbai','navimumbai','andheri'],
+    'bihar':['patna','gaya','bhagalpur','munger'],
+  };
+  var defaultState='';
+  var options='';
+  if(!defaultState){
+    options+='<option value="">select</option>';
+  }else{
+    changeCity(defaultState);
+  }
+  for(var i in stats){
+    options+='<option>'+i+'</option>';
+  }
+  state.innerHTML=options;
+  function changeCity(s){
+    var options='';
+    stats[s].forEach(function(v,i){
+        options+='<option>'+v+'</option>';
+    });
+    city.innerHTML=options;
+  }
+  state.addEventListener('change',function(e){
+    if(this.value){
+        changeCity(this.value);
+
+    }else{
+        city.innerHTML='';
+    }
+  },false);
