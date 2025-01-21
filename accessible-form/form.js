@@ -37,7 +37,7 @@ function clearErrors() {
     item.innerHTML = "";
   }
 }
-function seterror(id, error) {
+function setError(id, error) {
   element = document.getElementById(id);
   element.getElementsByClassName("formerror")[0].innerHTML = error;
 }
@@ -103,23 +103,28 @@ function validateForm() {
   }
 
   var state = document.forms["myForm"]["state"].value;
-  if (state.length > 0) {
-    seterror("state", "*Please Select your State!");
+  if (state == "") {
+    seterror("aa", "*Please Select your State!");
     returnval = false;
   }
 
   var city = document.forms["myForm"]["city"].value;
-  if (city.length > 0) {
-    seterror("city", "*Please Select your City!");
+  if (city == "") {
+    seterror("bb", "*Please Select your City!");
     returnval = false;
   }
 
-  var check = document.forms["myForm"]["check"].value;
-  if (check.checked = true) {
+  var gender = document.forms["myForm"]["gender"].value;
+  if (gender == ""){
+    seterror("gender", "*Please Select your gender!");
+    returnval = false;
+  }
+
+  var checkbox = document.forms["myForm"]['check'].checked;
+  if (checkbox == false) {  
     seterror("check", "*Please Select Check-box!");
     returnval = false;
   }
-
   return returnval;
 }
 
